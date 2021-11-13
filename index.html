@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta name="author" content="feranmi">
+        <meta name="theme-color" content="#B12A34">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="b.jpeg"/>
+    </head>
+    <body>
+        <p>Hello World</p>
+        <h1> This application can work offline, the image below is fetched from a url online</h1>
+        <img src="a.jpeg"/>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('sw2.js')
+                    .then(() => { console.log('Service Worker Registered'); });
+            }
+
+        </script>
+    </body>
+</html>
